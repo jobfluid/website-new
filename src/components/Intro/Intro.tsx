@@ -134,13 +134,13 @@ const Intro = () => {
         <div>
           <IntroSocialIcons>
             <IntroSocialIcon
-              href="https://www.facebook.com/in/jobfluid/"
+              href="https://www.facebook.com/jobfluid/"
               target="_blank"
               rel="noopener noreferrer">
               <img src={facebookLogo} alt="Facebook link" />
             </IntroSocialIcon>
             <IntroSocialIcon
-              href="https://www.instagram.com/in/jobfluid/"
+              href="https://www.instagram.com/jobfluid/"
               target="_blank"
               rel="noopener noreferrer">
               <img src={instagramLogo} alt="Instagram link" />
