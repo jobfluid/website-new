@@ -1,15 +1,25 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header'
-import Hero from './components/Hero'
+import Header from './components/Header';
+import Hero from './components/Hero';
+import { Route } from 'react-router-dom';
+import Testimonials from './components/pages/Testimonials';
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <AppContainer>
       <Header />
-      <Hero />
-    </div>
+      <Route exact path="/" component={Hero} />
+      <Route path="/testimonials" component={Testimonials} />
+    </AppContainer>
   );
-}
+};
 
 export default App;
