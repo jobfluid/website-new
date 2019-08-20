@@ -18,9 +18,6 @@ const HeaderComp = styled.header`
   padding-left: 40px;
   padding-right: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-  @media (max-width: 50em) {
-  }
 `;
 
 const Nav = styled.nav`
@@ -31,6 +28,10 @@ const Join = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
+
+  @media (max-width: 50em) {
+    display: none;
+  }
 `;
 
 const LogoText = styled.h4`
@@ -39,7 +40,7 @@ const LogoText = styled.h4`
   margin: 5px;
 
   @media (max-width: 50em) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -48,6 +49,11 @@ const LogoContainer = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
+
+  @media (max-width: 50em) {
+    flex: 4;
+    width: 100%;
+  }
 `;
 
 const NavLinks = styled.ul`

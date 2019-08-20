@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import LogoImg from '../img/logo.png';
 
 import { Button } from './styled-components/elements';
+import Intro from './Intro/Intro';
 
 const Presentation = styled.section`
   display: flex;
@@ -123,31 +124,34 @@ const CoverImage = styled.img`
 
 const Hero: React.FC = () => {
   return (
-    <Presentation>
-      <Introduction>
-        <IntroText>
-          <h1>Gain some job fluidity</h1>
-          <p>The best tech online learning resources, hand-picked daily.</p>
-        </IntroText>
-        <CTA>
-          <Button
-            href="https://www.patreon.com/jobfluid"
-            target="_blank"
-            className="cta-select">
-            Become a Patron
-          </Button>
-          <Button
-            href="https://join.slack.com/t/jobfluid/shared_invite/enQtNzE2OTYwNDk2NjQ0LTUxMDRkNmE1M2RkODk3ZTUwNjk1OGEwN2Y2ZjQwYzdiZWRlYzViM2U4NDY2ZmY1NGE1YjUyNjY3OTZiNDQ3NDE"
-            target="_blank"
-            className="cta-join">
-            Join Community
-          </Button>
-        </CTA>
-      </Introduction>
-      <Cover>
-        <CoverImage src={LogoImg} alt="Job Fluid Logo" />
-      </Cover>
-    </Presentation>
+    <>
+      <Presentation>
+        <Introduction>
+          <IntroText>
+            <h1>Gain some job fluidity</h1>
+            <p>The best tech online learning resources, hand-picked daily.</p>
+          </IntroText>
+          <CTA>
+            <Button
+              href="https://www.patreon.com/jobfluid"
+              target="_blank"
+              className="cta-select">
+              Become a Patron
+            </Button>
+            <Button
+              href="https://join.slack.com/t/jobfluid/shared_invite/enQtNzE2OTYwNDk2NjQ0LTUxMDRkNmE1M2RkODk3ZTUwNjk1OGEwN2Y2ZjQwYzdiZWRlYzViM2U4NDY2ZmY1NGE1YjUyNjY3OTZiNDQ3NDE"
+              target="_blank"
+              className="cta-join">
+              Join Community
+            </Button>
+          </CTA>
+        </Introduction>
+        <Cover>
+          <CoverImage src={LogoImg} alt="Job Fluid Logo" />
+        </Cover>
+      </Presentation>
+      <Intro />
+    </>
   );
 };
 

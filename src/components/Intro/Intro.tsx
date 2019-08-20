@@ -41,6 +41,8 @@ const IntroSide = styled.div`
     height: 100%;
     width: 100%;
     display: block;
+    filter: brightness(50%);
+    /* filter: blur(0.3em); */
   }
 `;
 
