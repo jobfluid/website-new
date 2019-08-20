@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import { Route } from 'react-router-dom';
 import Testimonials from './components/pages/Testimonials';
 import styled from 'styled-components';
+import Intro from './components/Intro/Intro';
 
 const AppContainer = styled.div`
   display: flex;
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <Header />
       <Route exact path="/" component={Hero} />
       <Route path="/testimonials" component={Testimonials} />
+      <Intro />
     </AppContainer>
   );
 };

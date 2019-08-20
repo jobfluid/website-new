@@ -9,16 +9,20 @@ const Presentation = styled.section`
   width: 90%;
   margin: auto;
   min-height: 80vh;
+  height: calc(100vh - 10vh);
   align-items: center;
+  justify-content: center;
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 50em) {
     flex-direction: column;
   }
 `;
+
 const Introduction = styled.div`
   flex: 1;
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 50em) {
+    flex: 0;
     margin-top: 5vh;
     text-align: center;
   }
@@ -42,7 +46,7 @@ const IntroText = styled.div`
     color: #585772;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 50em) {
     h1 {
       font-size: 30px;
     }
@@ -65,8 +69,14 @@ const CTA = styled.div`
     margin: 30px 0 0 30px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 50em) {
     padding: 10px 0 0 0;
+    .cta-join {
+      margin: 0 0 0 5px;
+    }
+    .cta-select {
+      margin: 0 5px 0 0;
+    }
   }
 `;
 
@@ -101,7 +111,7 @@ const CoverImage = styled.img`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 50em) {
     height: 80%;
 
     :hover {

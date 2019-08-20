@@ -18,6 +18,9 @@ const HeaderComp = styled.header`
   padding-left: 40px;
   padding-right: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 50em) {
+  }
 `;
 
 const Nav = styled.nav`
@@ -34,6 +37,10 @@ const LogoText = styled.h4`
   font-weight: 200;
   font-size: 3rem;
   margin: 5px;
+
+  @media (max-width: 50em) {
+    font-size: 1rem;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -47,6 +54,10 @@ const NavLinks = styled.ul`
   display: flex;
   justify-content: space-around;
   list-style: none;
+
+  @media (max-width: 50em) {
+    display: none;
+  }
 `;
 
 const NavLink = styled.li`
