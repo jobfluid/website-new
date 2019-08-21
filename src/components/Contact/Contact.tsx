@@ -62,31 +62,26 @@ const TextArea = styled.input`
 `;
 
 const Button = styled.button`
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 2px solid var(--clr-accent);
+  color: ${props => (props.color ? props.color : 'black')};
+  background-image: var(--button-gradient);
+  background-size: 200%;
+  transition: background-position 1s;
+
+  :hover,
+  :focus {
+    background-position: right;
+  }
+
   grid-area: button;
-  display: inline-block;
-  width: auto;
-  min-width: auto;
   margin-top: 1em;
   margin-left: auto;
-  background: transparent;
-  border: 3px solid #03afc2;
-  font-size: 2rem;
-  letter-spacing: 0.15em;
   color: #223843;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 400;
-  padding: 0.5em 1.5em;
-  cursor: pointer;
-
-  &:hover {
-    background: #03afc2;
-    color: white;
-  }
-
-  &:active {
-    transform: scale(0.9);
-  }
 `;
 
 const Contact = () => {
