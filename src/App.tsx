@@ -7,6 +7,7 @@ import Testimonials from './components/pages/Testimonials';
 import styled from 'styled-components';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+import Navbar from './components/Navbar';
 
 const AppContainer = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const AppContainer = styled.div`
 const App: React.FC = () => {
   return (
     <AppContainer>
-      <Header />
+      <Navbar />
       <Route exact path="/" component={Hero} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/contact" component={Contact} />

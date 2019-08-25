@@ -12,9 +12,12 @@
   );
   --button-gradient: linear-gradient(45deg, #ff7f4f, #ffc75f, #f9f871);
   --clr-accent: #ff7f4f;
+  --background: #eee;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

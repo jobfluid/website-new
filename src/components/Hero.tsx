@@ -129,7 +129,12 @@ const Hero: React.FC = () => {
         <Introduction>
           <IntroText>
             <h1>Gain some job fluidity</h1>
-            <p>The best tech online learning resources, hand-picked daily.</p>
+            <p>
+              As a tech newcomer, there are plenty of places to find tutorials
+              and learning resources but there’s no trusted and active community
+              of professionals to learn, share and grow with. That is where Job
+              Fluid comes in!
+            </p>
           </IntroText>
           <CTA>
             <Button
