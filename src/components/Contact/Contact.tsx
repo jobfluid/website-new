@@ -32,6 +32,11 @@ const Form = styled.form`
   .message {
     grid-area: message;
   }
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Label = styled.label`
