@@ -43,7 +43,6 @@ const testimonials: TestimonialItem[] = [
 ];
 
 const Page = styled.div`
-  width: 90%;
   text-align: center;
 `;
 

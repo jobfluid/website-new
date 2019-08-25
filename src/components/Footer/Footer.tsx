@@ -9,10 +9,6 @@ const FooterContainer = styled.footer`
   padding: 3em 0 0.5em;
   text-align: center;
   color: rgba(white, 0.9);
-
-  @media (max-width: 50em) {
-    margin-bottom: 50px;
-  }
 `;
 
 const SocialIcons = styled.div`

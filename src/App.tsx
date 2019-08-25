@@ -13,6 +13,7 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: fit-content;
 `;
 
 const App: React.FC = () => {
