@@ -241,6 +241,15 @@ const LogoImg = styled.img`
   margin: 0 10px;
 `;
 
+const handleClick = () => {
+  const navToggle = document.querySelector('#nav-toggle');
+
+  if (navToggle) {
+    // @ts-ignore
+    navToggle.checked = false;
+  }
+};
+
 const Navbar = () => {
   return (
     <Header>
@@ -255,16 +264,16 @@ const Navbar = () => {
 
       <Nav>
         <NavItems>
-          <NavItem>
+          <NavItem onClick={handleClick}>
             <Link to="/">Home</Link>
           </NavItem>
-          <NavItem>
+          <NavItem onClick={handleClick}>
             <Link to="/testimonials">Testimonials</Link>
           </NavItem>
-          <NavItem>
+          <NavItem onClick={handleClick}>
             <Link to="/contact">Contact</Link>
           </NavItem>
-          <NavItem>
+          <NavItem onClick={handleClick}>
             <NavLink
               href="https://join.slack.com/t/jobfluid/shared_invite/enQtNzE2OTYwNDk2NjQ0LTUxMDRkNmE1M2RkODk3ZTUwNjk1OGEwN2Y2ZjQwYzdiZWRlYzViM2U4NDY2ZmY1NGE1YjUyNjY3OTZiNDQ3NDE"
               target="_blank">
