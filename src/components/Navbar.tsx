@@ -7,7 +7,8 @@ const Header = styled.header`
   background: var(--background);
   text-align: center;
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 999;
   padding: 20px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -208,34 +209,6 @@ const HamBurger = styled.div`
     transform: translateY(4px);
   }
 `;
-
-// const Burger = styled.span`
-//   display: block;
-//   background: white;
-//   height: 2px;
-//   width: 2em;
-//   border-radius: 2px;
-//   position: relative;
-
-//   ::before,
-//   ::after {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     background: white;
-//     height: 2px;
-//     width: 2em;
-//     border-radius: 2px;
-//   }
-
-//   ::before {
-//     bottom: 7px;
-//   }
-
-//   ::after {
-//     top: 7px;
-//   }
-// `;
 
 const LogoText = styled.h4`
   font-weight: 200;

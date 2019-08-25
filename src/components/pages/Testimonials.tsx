@@ -54,7 +54,7 @@ const PageTitle = styled.h2`
 const TestimonialsContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
 `;
 
