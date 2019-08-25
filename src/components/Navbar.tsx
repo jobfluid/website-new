@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import LogoPNG from '../img/logo.png';
@@ -241,26 +241,21 @@ const LogoImg = styled.img`
   margin: 0 10px;
 `;
 
-const handleClick = () => {
-  const navToggle = document.querySelector('#nav-toggle');
-
-  if (navToggle) {
-    // @ts-ignore
-    navToggle.checked = false;
-  }
-};
-
 const Navbar = () => {
+  const [checked, setChecked] = useState(false);
+
+  const handleClick = () => {
+    setChecked(!checked);
+  };
+
   return (
     <Header>
-      {/* <Logo className="logo">Logo</Logo> */}
-      {/* <LogoText>Job Fluid</LogoText> */}
       <LogoContainer>
         <LogoImg src={LogoPNG} alt="logo" />
         <LogoText>Job Fluid</LogoText>
       </LogoContainer>
 
-      <NavToggle type="checkbox" id="nav-toggle" />
+      <NavToggle checked={checked} type="checkbox" id="nav-toggle" />
 
       <Nav>
         <NavItems>
@@ -283,7 +278,7 @@ const Navbar = () => {
         </NavItems>
       </Nav>
 
-      <NavToggleLabel htmlFor="nav-toggle">
+      <NavToggleLabel htmlFor="nav-toggle" onClick={handleClick}>
         <MenuToggle>
           <HamBurger />
         </MenuToggle>
